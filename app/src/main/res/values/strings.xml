@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dice Roller</string>
+    <string name="roll_dice">Roll Dice</string>
+    <string name="dice_roller_app">Dice Roller App</string>
+    <string name="github">Github</string>
+    <string name="follow_msg">Follow Us on</string>
+</resources>
