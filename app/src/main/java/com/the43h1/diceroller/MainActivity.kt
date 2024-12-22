@@ -1,5 +1,7 @@
 package com.the43h1.diceroller
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -28,6 +30,14 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+        // Functionality for Github Button
+        val gitB: Button = findViewById(R.id.github)
+
+        gitB.setOnClickListener {
+            intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/43H1-BOI"))
+//            intent.setPackage("com.android.chrome") // Or another browser package
+            startActivity(intent)
+        }
     }
 
     private fun rollDice() {
