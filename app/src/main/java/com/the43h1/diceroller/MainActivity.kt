@@ -4,6 +4,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -13,6 +14,8 @@ import androidx.core.view.WindowInsetsCompat
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
+    lateinit var diceImage: ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -20,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         val rollB: Button = findViewById(R.id.roll_dice)
 
-//        rollB.text = "Rollin' !
+//        rollB.text = "Rollin' ! Changing Test of Roll Button
 
 
         rollB.setOnClickListener {
@@ -28,6 +31,8 @@ class MainActivity : AppCompatActivity() {
             rollDice()
 
         }
+
+        diceImage = findViewById(R.id.dice_image)
 
 
         // Functionality for Github Button
@@ -41,10 +46,24 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun rollDice() {
-        val result: TextView = findViewById(R.id.result_text)
+        // Code for Random Number
+//        val result: TextView = findViewById(R.id.result_text)
+//        val answer = Random.nextInt(6) + 1
+//        result.text = answer.toString()
 
         val answer = Random.nextInt(6) + 1
 
-        result.text = answer.toString()
+        val drawableRes = when (answer) {
+            1 -> R.drawable.dice_1
+            2 -> R.drawable.dice_2
+            3 -> R.drawable.dice_3
+            4 -> R.drawable.dice_4
+            5 -> R.drawable.dice_5
+            else -> R.drawable.dice_6
+        }
+
+//        val diceImage: ImageView = findViewById(R.id.dice_image)
+        diceImage.setImageResource(drawableRes)
+
     }
 }

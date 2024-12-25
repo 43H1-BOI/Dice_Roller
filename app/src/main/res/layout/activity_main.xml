@@ -28,6 +28,7 @@
         android:gravity="center_vertical"
         android:orientation="vertical">
 
+        <!--
         <TextView
             android:id="@+id/result_text"
             android:layout_width="wrap_content"
@@ -35,6 +36,17 @@
             android:layout_gravity="center_horizontal"
             android:text=" 1 "
             android:textSize="50sp" />
+        -->
+
+        <ImageView
+            android:id="@+id/dice_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/image_showing_result"
+            android:src="@drawable/empty_dice"
+
+            />
 
         <Button
             android:id="@+id/roll_dice"
