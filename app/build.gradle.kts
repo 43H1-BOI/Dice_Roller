@@ -15,6 +15,9 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // Added Support Library for Vectors
+        vectorDrawables.useSupportLibrary = true
     }
 
     buildTypes {

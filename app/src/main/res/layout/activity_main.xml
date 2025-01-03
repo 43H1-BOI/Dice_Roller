@@ -45,6 +45,8 @@
             android:layout_gravity="center_horizontal"
             android:contentDescription="@string/image_showing_result"
             android:src="@drawable/empty_dice"
+            tools:src="@drawable/empty_dice"
+            app:srcCompat="@drawable/empty_dice"
 
             />
 
