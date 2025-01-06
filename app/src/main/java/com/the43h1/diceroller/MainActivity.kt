@@ -19,15 +19,15 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val rollB: Button = findViewById(R.id.roll_dice)
+        val startApp: Button = findViewById(R.id.startB)
+
+        startApp.setOnClickListener {
+            this.intent = Intent(this, gameActivity::class.java)
+            startActivity(this.intent)
+        }
 
 //        rollB.text = "Rollin' ! Changing Test of Roll Button
 
 
-        rollB.setOnClickListener {
-            Toast.makeText(this, "Dice Rolled", Toast.LENGTH_SHORT).show()
-            rollDice()
-
-        }
-
+    }
 }

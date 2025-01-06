@@ -22,7 +22,6 @@ class gameActivity : AppCompatActivity() {
         setContentView(R.layout.activity_game)
 
 
-
         val rollB: Button = findViewById(R.id.roll_dice)
 
 //        rollB.text = "Rollin' ! Changing Test of Roll Button
@@ -67,6 +66,5 @@ class gameActivity : AppCompatActivity() {
 //        val diceImage: ImageView = findViewById(R.id.dice_image)
         diceImage.setImageResource(drawableRes)
 
-    }
     }
 }

@@ -5,57 +5,34 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:foregroundTintMode="src_in"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_weight="0.01"
         android:fontFamily="sans-serif-black"
-
         android:text="@string/dice_roller_app"
         android:textSize="30sp" />
 
 
     <LinearLayout
-        android:id="@+id/main_part"
         android:layout_width="match_parent"
-        android:layout_height="625dp"
-        android:layout_gravity="center_vertical"
-
-        android:gravity="center_vertical"
-        android:orientation="vertical">
-
-        <!--
-        <TextView
-            android:id="@+id/result_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text=" 1 "
-            android:textSize="50sp" />
-        -->
-
-        <ImageView
-            android:id="@+id/dice_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:contentDescription="@string/image_showing_result"
-            android:src="@drawable/empty_dice"
-            tools:src="@drawable/empty_dice"
-            app:srcCompat="@drawable/empty_dice"
-
-            />
+        android:layout_height="388dp"
+        android:layout_gravity="center|center_vertical"
+        android:layout_weight="1"
+        android:gravity="center|center_vertical">
 
         <Button
-            android:id="@+id/roll_dice"
+            android:id="@+id/startB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/roll_dice" />
+            android:text="@string/start_game" />
 
     </LinearLayout>
 
@@ -64,6 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:layout_weight="0.01"
         android:gravity="bottom"
         android:orientation="vertical">
 
