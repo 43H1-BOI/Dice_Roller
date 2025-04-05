@@ -26,6 +26,14 @@ class MainActivity : AppCompatActivity() {
             startActivity(this.intent)
         }
 
+        val gitB: Button = findViewById(R.id.github)
+
+        gitB.setOnClickListener {
+            intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/43H1-BOI"))
+//            intent.setPackage("com.android.chrome") // Or another browser package
+            startActivity(intent)
+        }
+
 //        rollB.text = "Rollin' ! Changing Test of Roll Button
 
 
