@@ -1,6 +1,7 @@
 # Dice Roller Application
 
-![Dice Roller Logo](./assets/logo.svg)
+<img src="https://github.com/43H1-BOI/Dice_Roller/blob/main/app/src/main/res/drawable/Dice_Roller_2.png" height="200" width="200">
+<!-- ![Dice Roller Logo](https://github.com/43H1-BOI/Dice_Roller/blob/main/app/src/main/res/drawable/Dice_Roller_2.png) -->
 
 **Dice Roller** is a simple and interactive Android application built using Kotlin that simulates rolling a six-sided dice. The app provides a visually engaging experience by using image-based dice pieces, allowing users to roll the dice with a simple tap. 
 
@@ -11,7 +12,7 @@
 - **Image-based Dice Faces**: Displays dice faces corresponding to the rolled number.
 - **Random Dice Roll**: Generates a random number between 1 and 6.
 - **Interactive UI**: Roll the dice with a tap.
-- **Multilingual Support**: Accessible in multiple languages.
+<!-- - **Multilingual Support**: Accessible in multiple languages. -->
 - **Offline Functionality**: No internet required.
 - **Lightweight and Fast**: Quick startup with minimal dependencies.
 
@@ -21,8 +22,8 @@
 
 - **Kotlin**: Primary programming language for Android app development.
 - **Android Studio**: Integrated development environment.
-- **Android SDK**: Target SDK version 33 or latest.
-- **Drawable Resources**: Dice face images stored in the `res/drawable` directory.
+- **Android SDK**: Target SDK version 27 or latest.
+<!-- - **Drawable Resources**: Dice face images stored in the `res/drawable` directory. -->
 
 ---
 
