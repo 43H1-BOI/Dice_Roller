@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:foregroundGravity="center"
-    tools:context=".page2Activity">
+    tools:context=".Page2Activity">
 
     <TextView
         android:id="@+id/textView3"
@@ -40,7 +40,7 @@
 
         android:layout_weight="1"
         android:gravity="center"
-        android:text="6 Face Dice"
+        android:text="@string/_6_face_dice"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="8 Face Dice"
+        android:text="@string/_8_face_dice"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/d6Button" />
@@ -60,7 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="10 Face Dice"
+        android:text="@string/_10_face_dice"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/d8Button" />
@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:layout_weight="1"
-        android:text="20 Face Dice"
+        android:text="@string/_20_face_dice"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/d10Button" />

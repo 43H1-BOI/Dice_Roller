@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlin.random.Random
+import androidx.core.net.toUri
 
 class D6Activity : AppCompatActivity() {
     lateinit var diceImage: ImageView
@@ -34,7 +35,7 @@ class D6Activity : AppCompatActivity() {
         val gitB: Button = findViewById(R.id.github)
 
         gitB.setOnClickListener {
-            intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/43H1-BOI"))
+            intent = Intent(Intent.ACTION_VIEW, "https://github.com/43H1-BOI".toUri())
 //            intent.setPackage("com.android.chrome") // Or another browser package
             startActivity(intent)
         }

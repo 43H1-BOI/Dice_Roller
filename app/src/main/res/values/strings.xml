@@ -7,4 +7,8 @@
     <string name="image_showing_result">Image Showing Result</string>
     <string name="start_game">Start Game</string>
     <string name="choose_no_of_dice">Choose Number of Dice</string>
+    <string name="_6_face_dice">6 Face Dice</string>
+    <string name="_8_face_dice">8 Face Dice</string>
+    <string name="_10_face_dice">10 Face Dice</string>
+    <string name="_20_face_dice">20 Face Dice</string>
 </resources>
