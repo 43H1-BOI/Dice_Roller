@@ -5,6 +5,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.net.toUri
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         val gitB: Button = findViewById(R.id.github)
 
         gitB.setOnClickListener {
-            intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/43H1-BOI"))
+            intent = Intent(Intent.ACTION_VIEW, "https://github.com/43H1-BOI".toUri())
 //            intent.setPackage("com.android.chrome") // Or another browser package
             startActivity(intent)
         }
