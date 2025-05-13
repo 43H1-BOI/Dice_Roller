@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         val startApp: Button = findViewById(R.id.startB)
 
         startApp.setOnClickListener {
-            this.intent = Intent(this, gameActivity::class.java)
+            this.intent = Intent(this, page2Activity::class.java)
             startActivity(this.intent)
         }
 
