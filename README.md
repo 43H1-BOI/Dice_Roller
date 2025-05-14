@@ -1,6 +1,6 @@
 # Dice Roller Application
 
-<img src="https://github.com/43H1-BOI/Dice_Roller/blob/main/app/src/main/res/drawable/Dice_Roller_2.png" height="200" width="200">
+<img src="https://github.com/43H1-BOI/Dice_Roller/blob/main/app/src/main/res/drawable/dice_roller_2.png" height="200" width="200">
 <!-- ![Dice Roller Logo](https://github.com/43H1-BOI/Dice_Roller/blob/main/app/src/main/res/drawable/Dice_Roller_2.png) -->
 
 **Dice Roller** is a simple and interactive Android application built using Kotlin that simulates rolling a six-sided dice. The app provides a visually engaging experience by using image-based dice pieces, allowing users to roll the dice with a simple tap.
