@@ -31,4 +31,35 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
+    // Created All below Function for Learning Activity Lifecycle of Android
+    override fun onRestart() {
+        super.onRestart()
+        println("onRestart()")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        println("onResume()")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        println("onPause()")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        println("onStop()")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        println("onDestroy()")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        println("onStart()")
+    }
 }
