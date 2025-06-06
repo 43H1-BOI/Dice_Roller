@@ -15,16 +15,18 @@ class MainActivity : AppCompatActivity() {
         val startApp: Button = findViewById(R.id.startB)
 
         startApp.setOnClickListener {
-            this.intent = Intent(this, Page2Activity::class.java)
-            startActivity(this.intent)
+            Intent(this, Page2Activity::class.java).also {
+                startActivity(it)
+            }
         }
 
         val gitB: Button = findViewById(R.id.github)
 
         gitB.setOnClickListener {
-            intent = Intent(Intent.ACTION_VIEW, "https://github.com/43H1-BOI".toUri())
+            intent = Intent(Intent.ACTION_VIEW, "https://github.com/43H1-BOI".toUri()).also {
 //            intent.setPackage("com.android.chrome") // Or another browser package
-            startActivity(intent)
+                startActivity(it)
+            }
         }
 
 //        rollB.text = "Rollin' ! Changing Test of Roll Button
