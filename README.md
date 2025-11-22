@@ -3,7 +3,7 @@
 <img src="https://github.com/43H1-BOI/Dice_Roller/blob/main/app/src/main/res/drawable/dice_roller_2.png" height="200" width="200">
 <!-- ![Dice Roller Logo](https://github.com/43H1-BOI/Dice_Roller/blob/main/app/src/main/res/drawable/Dice_Roller_2.png) -->
 
-**Dice Roller** is a simple and interactive Android application built using Kotlin that simulates rolling a six-sided dice. The app provides a visually engaging experience by using image-based dice pieces, allowing users to roll the dice with a simple tap.
+**Dice Roller** is a simple and interactive Android application built using Kotlin that simulates rolling a six-sided dice. The app provides a visually engaging experience with image-based dice faces, allowing users to roll the dice with a simple tap. The application features multiple screens including a welcome screen and a dedicated dice rolling interface.
 
 
 ---
@@ -20,10 +20,12 @@ Dice Roller is designed strictly for educational purposes and personal use. The 
 
 ## 🚀 Features
 
-- **Image-based Dice Faces**: Displays dice faces corresponding to the rolled number.
-- **Random Dice Roll**: Generates a random number between 1 and 6.
-- **Interactive UI**: Roll the dice with a tap.
-- **Offline Functionality**: No internet required.
+- **Image-based Dice Faces**: Displays dice faces corresponding to the rolled number (1-6).
+- **Random Dice Roll**: Generates a random number between 1 and 6 using Kotlin's Random library.
+- **Interactive UI**: Roll the dice with a tap and receive visual feedback via Toast notifications.
+- **Multi-Screen Experience**: Navigate through a welcome screen to the main dice rolling interface.
+- **GitHub Integration**: Quick access to the developer's GitHub profile from within the app.
+- **Offline Functionality**: No internet required for dice rolling (internet only needed for GitHub profile link).
 - **Lightweight and Fast**: Quick startup with minimal dependencies.
 <!-- - **Multilingual Support**: Accessible in multiple languages. -->
 
@@ -33,7 +35,12 @@ Dice Roller is designed strictly for educational purposes and personal use. The 
 
 - **Kotlin**: Primary programming language for Android app development.
 - **Android Studio**: Integrated development environment.
-- **Android SDK**: Target SDK version 27 or latest.
+- **Android SDK**: 
+  - Minimum SDK: 24 (Android 7.0 Nougat)
+  - Target SDK: 34 (Android 14)
+  - Compile SDK: 35
+- **Gradle**: Build automation tool with Kotlin DSL.
+- **Material Design Components**: Modern UI components for Android.
 <!-- - **Drawable Resources**: Dice face images stored in the `res/drawable` directory. -->
 
 ---
@@ -42,27 +49,33 @@ Dice Roller is designed strictly for educational purposes and personal use. The 
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/43H1-BOI/Dice_Roller.git
    cd Dice_Roller
    ```
 
-2. Open the project in Android Studio:
+2. **Open the project in Android Studio:**
+   - Launch Android Studio.
    - Select **File > Open** and navigate to the cloned repository folder.
+   - Wait for Gradle sync to complete.
 
-3. Build and run the app:
-   - Connect an Android device or start an emulator.
-   - Click the **Run** button in Android Studio.
+3. **Build and run the app:**
+   - Ensure you have Android SDK 24 or higher installed.
+   - Connect an Android device (with USB debugging enabled) or start an Android Virtual Device (AVD) emulator.
+   - Click the **Run** button (green play icon) in Android Studio or press `Shift + F10`.
+   - The app will be installed and launched on your device/emulator.
 
 ---
 
 ## 📚 Usage
 
-- Launch the app.
-- Tap the **Roll Dice** button.
-- The dice image updates to show a randomly selected face from 1 to 6.
-- Repeat as desired for new rolls.
+1. **Launch the app** - You'll see the welcome screen with the app logo.
+2. **Tap the Start button** - Navigate to the main dice rolling screen.
+3. **Tap the Roll Dice button** - The dice image updates to show a randomly selected face from 1 to 6.
+4. **View the result** - A toast notification confirms "Dice Rolled" and the dice face updates accordingly.
+5. **Repeat as desired** - Continue rolling for new results.
+6. **Access GitHub profile** (optional) - Tap the GitHub button to visit the developer's profile.
 
 ---
 
